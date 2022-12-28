@@ -1,0 +1,37 @@
+@media (max-width: 1200px) {
+    .header{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 991px) {
+    .header{
+        justify-content: space-around;
+    }
+    .promo
+        &__wrapper{
+            margin-right: 10px;
+        }
+}
+@media (max-width: 767px) {
+    .header{
+        justify-content: space-around;
+    }
+    .promo
+        &__wrapper{
+            margin-right: 10px;
+        }
+}
+@media (max-width: 575px) {
+    .header{
+        margin: 0 10px;
+        justify-content: space-around;
+    }
+        &__phone{
+            font-size: 16px;
+        }
+    .promo
+        &__wrapper{
+            margin-right: 10px;
+        }
+}
