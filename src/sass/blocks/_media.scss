@@ -46,18 +46,15 @@
     }
     .consultation {
         &__title{
+            font-size: 26px;
             margin-left: 10px;
         }
         &__descr {
             margin-left: 10px;
+            font-size: 15px;
         }
         &__feed-form{
             margin-left: 10px;
-        }
-    }
-    .title {
-        &_left{
-            font-size: 26px;
         }
     }
 }
@@ -123,14 +120,14 @@
     }
     .consultation {
         &__title{
-            font-size: 26px;
+            font-size: 20px;
             margin-left: 10px;
+            text-align: center;
         }
         &__descr {
+            font-size: 15px;
             margin-left: 10px;
-        }
-        &__feed-form{
-            margin-left: 10px;
+            text-align: center;
         }
     }
 }
@@ -159,6 +156,20 @@
         }
         &__item {
             max-width: 100%;
+        }
+    }
+    .consultation {
+        &__title{
+            font-size: 20px;
+            margin-left: 10px;
+            text-align: center;
+        }
+        &__descr {
+            font-size: 15px;
+            margin-left: 10px;
+        }
+        &__feed-form{
+            margin-left: 10px;
         }
     }
 }
