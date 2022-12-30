@@ -167,9 +167,11 @@
         &__descr {
             font-size: 15px;
             margin-left: 10px;
+            text-align: center;
         }
         &__feed-form{
-            margin-left: 10px;
+            margin: 0 auto;
+            margin-top: 15px;
         }
     }
 }
