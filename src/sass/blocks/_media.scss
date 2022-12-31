@@ -15,6 +15,10 @@
             margin-left: 10px;
         }
     }
+
+    .prev, .next {
+        display: none;
+    }
     
 }
 @media (max-width: 767px) {
@@ -56,6 +60,21 @@
         &__feed-form{
             margin-left: 10px;
         }
+    }
+
+    .carousel {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .tns-item {
+        img {
+            width: 70%;
+        }
+    }
+
+    .prev, .next {
+        display: none;
     }
 }
 @media (max-width: 575px) {
@@ -130,6 +149,10 @@
             text-align: center;
         }
     }
+
+    .prev, .next {
+        display: none;
+    }
 }
 @media (max-width: 400px) {
     .header{
@@ -173,5 +196,9 @@
             margin: 0 auto;
             margin-top: 15px;
         }
+    }
+
+    .prev, .next {
+        display: none;
     }
 }
