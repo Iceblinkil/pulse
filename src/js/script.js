@@ -19,34 +19,42 @@
 //   });
 
 const slider = tns({
-    container: '.carousel__inner',
-    items: 1,
-    slideBy: 'page',
-    autoplay: true,
-    speed: 1000,
-    controls: false,
-    nav: false,
-    autoplayButtonOutput: false,
-    responsive: {
-        640: {
-            dots: true,
-            arrows: false,
-            edgePadding: 20,
-            gutter: 20,
-            items: 1
-        },
-        700: {
-          gutter: 30
-        },
-        900: {
-          items: 1
-        }
-      }
+	container: '.carousel__inner',
+	items: 1,
+	slideBy: 'page',
+	autoplay: true,
+	speed: 1000,
+	controls: false,
+	nav: false,
+	autoplayButtonOutput: false,
+	responsive: {
+		640: {
+			dots: true,
+			arrows: false,
+			edgePadding: 20,
+			gutter: 20,
+			items: 1
+		},
+		700: {
+		  gutter: 30
+		},
+		900: {
+		  items: 1
+		}
+	  }
   });
 
   document.querySelector('.prev').addEventListener('click', function () {
-    slider.goTo('prev');
+	slider.goTo('prev');
   });
   document.querySelector('.next').addEventListener('click', function () {
-    slider.goTo('next');
+	slider.goTo('next');
   });
+  
+$(document).ready(function(){
+	$('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
+		$(this)
+		  .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
+		  .closest('div.container').find('div.catalog__content').removeClass('catalog__tab_active').eq($(this).index()).addClass('catalog__tab_active');
+	  });
+});
