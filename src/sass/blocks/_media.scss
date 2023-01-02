@@ -153,6 +153,42 @@
     .prev, .next {
         display: none;
     }
+
+    .feed {
+        &-item {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &__photo{
+                margin: 0 auto;
+            }
+            &__name {
+                margin-top: 5px;
+                text-align: center;
+            }
+            &__descr {
+                text-align: center;
+            }
+            &__feedback {
+                text-align: center;
+            }
+        }
+    }
+
+    .footer{
+        &__info {
+            max-width: 80%;
+            padding: 40px 50px;
+        }
+        &__adress {
+            font-size: 18px;
+            line-height: 15px;
+        }
+        &__phone {
+            font-size: 15px;
+            line-height: 15px;
+        }
+    }
 }
 @media (max-width: 400px) {
     .header{
