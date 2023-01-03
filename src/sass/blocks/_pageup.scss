@@ -1,0 +1,22 @@
+.pageup {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    transition: 0.5 all;
+    &:hover{
+        right: 38px;
+        bottom: 38px;
+        width: 42px;
+        height: 42px;
+        box-shadow: 3px 3px 20px #6b6b6b;
+        border-radius: 100%;
+        border-radius: 1px solid $main-color;
+    }
+    img{
+    width: 100%;
+    border-radius: 100%;
+    }
+}
