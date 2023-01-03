@@ -88,4 +88,35 @@ $(document).ready(function(){
 		});
 	});
 
+	function validateForms(form) {
+		$(form).validate({
+			rules: {
+				name: {
+					required:true,
+					minlength: 2
+				},
+				phone: "required",
+				email: {
+					required: true,
+					email: true
+				},
+			},
+			messages: {
+				name: {
+					required: "Пожалуйста, введите своё имя",
+					  minlength: jQuery.validator.format("Введите {0}+ символов")
+				},
+				phone: "Пожалуйста, введите свой номер телефона",
+				email: {
+				  required: "Пожалуйста, введите свой e-mail",
+				  email: "Ваш e-mail адресс должен быть в формате: name@gmail.com"
+				}
+			}
+		});
+	};
+
+	validateForms('#consultation-form');
+	validateForms('#consultation form');
+	validateForms('#order form');
+
 });
